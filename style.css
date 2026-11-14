@@ -158,3 +158,13 @@ h1 em, h2 em { color: var(--plum); }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.25rem; }
 .text-link { color: var(--plum); font-size: .9rem; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--peach); padding-bottom: .15rem; }
 .text-link:hover { color: var(--ink); border-color: var(--plum); }
+
+
+/* Refined secondary hero action */
+.hero-actions { gap: 1rem 1.35rem; }
+.text-link { display: inline-flex; align-items: center; gap: .38rem; color: var(--plum); font-size: .9rem; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--peach); padding: .35rem 0 .2rem; transition: color .2s ease, border-color .2s ease; }
+.link-arrow { display: inline-block; color: var(--peach); transition: transform .22s ease, color .22s ease; }
+.text-link:hover, .text-link:focus-visible { color: var(--ink); border-color: var(--plum); }
+.text-link:hover .link-arrow, .text-link:focus-visible .link-arrow { color: var(--plum); transform: translate(3px, -3px); }
+.text-link:focus-visible { outline: 2px solid var(--peach); outline-offset: 5px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { .text-link, .link-arrow { transition: none; } }
