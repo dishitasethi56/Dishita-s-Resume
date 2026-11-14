@@ -199,3 +199,10 @@ h1 em, h2 em { color: var(--plum); }
   #work .section-heading { gap: .45rem; margin-bottom: .6rem; }
   #work .section-heading > .muted { margin-top: 0; }
 }
+
+
+/* Give the Creative Work title room to breathe before the gallery */
+#work .section-heading { margin-bottom: 1.6rem; }
+@media (max-width: 760px) {
+  #work .section-heading { margin-bottom: 1.25rem; }
+}
