@@ -181,3 +181,9 @@ h1 em, h2 em { color: var(--plum); }
 .text-link:hover .link-arrow, .text-link:focus-visible .link-arrow { background: var(--plum); color: white; transform: translate(3px, -3px); }
 @media (max-width: 760px) { .hero-actions { gap: .9rem 1.2rem; } .experience-label { font-size: .88rem; } }
 @media (prefers-reduced-motion: reduce) { .link-arrow { transition: none; } }
+
+
+/* Tighten the whitespace beneath the About and Creative Work headings */
+#about .two-col > div:first-child h2 { margin-bottom: .45rem; }
+#work .section-heading { margin-bottom: 1.25rem; }
+#work .section-heading h2 { margin-bottom: .35rem; }
