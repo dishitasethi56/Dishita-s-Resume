@@ -123,3 +123,17 @@ h1 em, h2 em { color: var(--plum); }
 @media (max-width: 760px) {
   .projects-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Centered personal identity and initials monogram */
+.hero { grid-template-rows: auto 1fr; row-gap: 1.2rem; }
+.hero-identity { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: .65rem; padding-top: .25rem; }
+.monogram { width: 82px; height: 82px; display: grid; place-items: center; border-radius: 50%; background: var(--plum); color: var(--ivory); border: 5px solid var(--peach); outline: 1px solid var(--plum); outline-offset: 4px; font: 700 1.7rem "Playfair Display", serif; letter-spacing: .04em; box-shadow: 0 8px 22px #29263820; }
+.hero-name { color: var(--ink); font: 700 clamp(2.4rem, 5vw, 3.8rem)/1.08 "Playfair Display", serif; letter-spacing: -.035em; margin: .2rem 0 0; }
+.hero-copy { min-width: 0; }
+@media (max-width: 760px) {
+  .hero { grid-template-rows: auto auto auto; row-gap: 1.2rem; }
+  .hero-identity { padding-top: .2rem; }
+  .monogram { width: 72px; height: 72px; font-size: 1.5rem; }
+  .hero-name { font-size: clamp(2.2rem, 9vw, 3rem); }
+}
