@@ -141,3 +141,14 @@ h1 em, h2 em { color: var(--plum); }
 
 /* The name stands alone; remove the separate initials badge. */
 .hero-identity { gap: 0; }
+
+
+/* Resume-style left-aligned name and role line */
+.hero { grid-template-rows: 1fr; row-gap: 0; }
+.hero-identity { display: none; }
+.hero-name { text-align: left; margin: 0 0 .85rem; font-size: clamp(2.5rem, 5vw, 4rem); }
+.hero-copy .eyebrow { text-align: left; margin-bottom: 1rem; }
+@media (max-width: 760px) {
+  .hero { grid-template-rows: auto; row-gap: 0; }
+  .hero-name { font-size: clamp(2.35rem, 9vw, 3.2rem); }
+}
