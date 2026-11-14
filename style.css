@@ -187,3 +187,15 @@ h1 em, h2 em { color: var(--plum); }
 #about .two-col > div:first-child h2 { margin-bottom: .45rem; }
 #work .section-heading { margin-bottom: 1.25rem; }
 #work .section-heading h2 { margin-bottom: .35rem; }
+
+/* Further tighten heading-to-content spacing in About and Creative Work */
+#about .two-col { align-items: start; }
+#about .two-col > div:first-child .eyebrow { margin-bottom: .55rem; }
+#about .two-col > div:first-child h2 { margin: 0; }
+#work .section-heading { align-items: start; margin-bottom: .55rem; }
+#work .section-heading h2 { margin: 0; }
+#work .section-heading > .muted { margin-top: .35rem; margin-bottom: 0; }
+@media (max-width: 760px) {
+  #work .section-heading { gap: .45rem; margin-bottom: .6rem; }
+  #work .section-heading > .muted { margin-top: 0; }
+}
