@@ -137,3 +137,7 @@ h1 em, h2 em { color: var(--plum); }
   .monogram { width: 72px; height: 72px; font-size: 1.5rem; }
   .hero-name { font-size: clamp(2.2rem, 9vw, 3rem); }
 }
+
+
+/* The name stands alone; remove the separate initials badge. */
+.hero-identity { gap: 0; }
