@@ -152,3 +152,9 @@ h1 em, h2 em { color: var(--plum); }
   .hero { grid-template-rows: auto; row-gap: 0; }
   .hero-name { font-size: clamp(2.35rem, 9vw, 3.2rem); }
 }
+
+
+/* Hero navigation actions */
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.25rem; }
+.text-link { color: var(--plum); font-size: .9rem; font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--peach); padding-bottom: .15rem; }
+.text-link:hover { color: var(--ink); border-color: var(--plum); }
