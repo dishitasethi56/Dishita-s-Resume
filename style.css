@@ -206,3 +206,28 @@ h1 em, h2 em { color: var(--plum); }
 @media (max-width: 760px) {
   #work .section-heading { margin-bottom: 1.25rem; }
 }
+
+
+/* Group the Creative Work title and supporting line as one calm heading block */
+#work .section-heading {
+  display: block;
+  margin-bottom: 2.15rem;
+}
+#work .work-heading-copy {
+  max-width: 620px;
+}
+#work .work-heading-copy .eyebrow {
+  margin-bottom: .7rem;
+}
+#work .work-heading-copy h2 {
+  margin: 0;
+}
+#work .work-heading-copy .muted {
+  max-width: 440px;
+  margin: .8rem 0 0;
+  line-height: 1.55;
+}
+@media (max-width: 760px) {
+  #work .section-heading { margin-bottom: 1.8rem; }
+  #work .work-heading-copy .muted { margin-top: .7rem; }
+}
