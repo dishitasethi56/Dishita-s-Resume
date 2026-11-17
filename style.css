@@ -259,3 +259,12 @@ h1 em, h2 em { color: var(--plum); }
 /* Final responsive portrait layout */
 .hero-art .hero-main { position: relative; display: block; width: min(100%, 360px); height: auto; aspect-ratio: 3 / 4; max-height: none; right: auto; top: auto; margin: 0 auto; transform: none; object-fit: cover; object-position: center top; }
 @media (max-width: 760px) { .hero-art .hero-main { width: min(100%, 340px); height: auto; } }
+
+/* Subtle celestial-inspired frame for the homepage portrait */
+.hero-art .hero-main {
+  border: 10px solid var(--ivory);
+  outline: 1px solid #C99A58;
+  outline-offset: 5px;
+  box-shadow: 0 14px 34px #29263826, 0 0 0 8px #70416F12;
+  border-radius: 3px;
+}
