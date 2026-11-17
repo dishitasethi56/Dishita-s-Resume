@@ -317,9 +317,13 @@ footer::before {
   transform: rotate(1.6deg);
 }
 .hero::before {
-  inset: 0;
-  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: auto;
+  width: 100vw;
   height: auto;
+  transform: translateX(-50%);
   background:
     linear-gradient(rgba(251,245,239,.78), rgba(251,245,239,.78)),
     url("moon-phase-background.jpg") center center / cover no-repeat;
