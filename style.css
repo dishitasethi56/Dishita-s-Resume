@@ -266,6 +266,8 @@ h1 em, h2 em { color: var(--plum); }
   outline: none;
   box-shadow: 0 0 0 1px #C99A58, 0 12px 30px #29263824;
   border-radius: 3px;
+  transform: rotate(1.6deg);
+  transform-origin: center center;
 }
 
 /* Faded moon-phase artwork at the very top and bottom only */
