@@ -254,3 +254,8 @@ h1 em, h2 em { color: var(--plum); }
     height: auto;
   }
 }
+
+
+/* Final responsive portrait layout */
+.hero-art .hero-main { position: relative; display: block; width: min(100%, 360px); height: auto; aspect-ratio: 3 / 4; max-height: none; right: auto; top: auto; margin: 0 auto; transform: none; object-fit: cover; object-position: center top; }
+@media (max-width: 760px) { .hero-art .hero-main { width: min(100%, 340px); height: auto; } }
