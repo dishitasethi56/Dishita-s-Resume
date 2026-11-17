@@ -42,12 +42,12 @@ h1 em, h2 em { color: var(--plum); }
 .intro { max-width: 520px; color: var(--muted); font-size: 1.08rem; margin-bottom: 1.5rem; }
 .button { display: inline-block; background: var(--plum); color: white; border: 1px solid transparent; border-radius: 30px; padding: .8rem 1.2rem; text-decoration: none; font-weight: 700; }
 .button:hover { background: var(--peach); color: var(--ink); }
-.hero-art { min-height: 390px; position: relative; }
+.hero-art { min-height: 480px; position: relative; }
 .hero-art::before { content: ""; position: absolute; width: 210px; height: 210px; border-radius: 50%; background: #E9A18C35; right: 4%; top: 2%; }
 .hero-note { position: absolute; right: 0; bottom: -8px; z-index: 2; width: 142px; height: 142px; padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; background: var(--peach); color: var(--ink); border-radius: 50%; font: 700 .82rem/1.35 "DM Sans", sans-serif; box-shadow: 0 8px 24px #29263818; }
 .hero-note em { font-family: "Playfair Display", serif; font-size: 1rem; }
 .hero-art img { position: absolute; object-fit: cover; border: 8px solid white; box-shadow: 0 15px 35px #29263820; }
-.hero-main { width: 78%; height: 300px; right: 0; top: 20px; transform: rotate(3deg); }
+.hero-main { width: min(78%, 360px); height: auto; aspect-ratio: 3 / 4; max-height: 450px; right: 8%; top: 0; transform: rotate(2deg); object-position: center top; }
 .hero-small { width: 48%; height: 190px; left: 0; bottom: 0; transform: rotate(-5deg); }
 .two-col { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; }
 .traits { color: var(--plum); font-weight: 700; }
@@ -96,9 +96,9 @@ h1 em, h2 em { color: var(--plum); }
   .nav-links a { font-size: .7rem; }
   .hero, .two-col { grid-template-columns: 1fr; }
   .hero { padding-top: 3.5rem; }
-  .hero-art { min-height: 340px; }
+  .hero-art { min-height: 490px; }
   .hero-note { right: 0; bottom: -2px; width: 118px; height: 118px; padding: .75rem; font-size: .68rem; }
-  .hero-main { height: 245px; }
+  .hero-main { width: min(82%, 340px); height: auto; aspect-ratio: 3 / 4; max-height: 430px; right: 8%; top: 0; }
   .hero-small { height: 155px; }
   .section-heading { align-items: flex-start; flex-direction: column; }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
