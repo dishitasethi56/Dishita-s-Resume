@@ -304,3 +304,51 @@ footer::before {
   pointer-events: none;
 }
 
+
+
+/* Refined full-section moon artwork and clearer portrait spacing */
+.hero {
+  gap: 4.5rem;
+}
+.hero-art {
+  padding-left: .75rem;
+}
+.hero-art .hero-main {
+  transform: rotate(1.6deg);
+}
+.hero::before {
+  inset: 0;
+  width: auto;
+  height: auto;
+  background:
+    linear-gradient(rgba(251,245,239,.78), rgba(251,245,239,.78)),
+    url("moon-phase-background.jpg") center center / cover no-repeat;
+  opacity: 1;
+}
+.contact {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--plum);
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(rgba(112,65,111,.76), rgba(112,65,111,.76)),
+    url("moon-phase-background.jpg") center center / cover no-repeat;
+  pointer-events: none;
+}
+footer::before {
+  content: none;
+}
+@media (max-width: 760px) {
+  .hero {
+    gap: 2rem;
+  }
+  .hero-art {
+    padding-left: 0;
+  }
+}
